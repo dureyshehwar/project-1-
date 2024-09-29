@@ -1,0 +1,201 @@
+<!--Create a new website using HTML and Bootstrap.The website must include the following: 
+1.At least 2 pages.
+2.A Bootstrap navbar, table, and form.
+3.Bootstrap grid used throughout to format elements
+4.Elements should stack vertically when the window is small-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My bootstrap Project</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!----Navbar---->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">World Tour</a>
+     <!-----hambuger button-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destinations.html">destinations</a>
+          </li>
+          
+            
+        </ul>
+        <!-----this is a form----->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!----hero-->
+  <div>
+    <img class="img-fluid" src="https://content.jdmagicbox.com/comp/roorkee/q5/9999p1332.1332.180316184706.i4q5/catalogue/world-tour-and-travels-roorkee-car-hire-uc1jy.jpg"  width="1800" height="500"
+    alt="Around the world">
+  </div>
+ 
+  <!-----Welcome----->
+  <!-- added some padding and to make it font size bigger--->
+ <h1 class="text-center p-1">The amazing journey to begin.</h1>
+ <p class="text-center fs-5">The beautiful places for relaxing.</p>
+ <p class="text-center fs-5">One more step closer to your life biggest Adventures.</p>
+ 
+ <!-----cards-->
+
+ <!---Adding rows and columns  and giving them space so ,they can adjust on any small screen.
+ added images to every card adding margin and gutter.so ,it can be define accodringly and also adding a small paragrpah.-->
+ <div class="container">
+ 
+   <div class="row row-cols-1 row-cols-lg-3 g-3 m-5 pt-3">
+          <div class="col">
+            <div class="card" style="width:18rem";>
+                <img src="https://t3.ftcdn.net/jpg/06/19/00/08/360_F_619000872_AxiwLsfQqRHMkNxAbN4l5wg1MsPgBsmo.jpg" class="card-img-top"  width="500" height="200" alt="Hotel bedrooms.">
+                <div class="card-body">
+                  <h5 class="card-title">Hotel</h5>
+                  <p class="card-text fs-5">A hotel room means comfort, privacy, security and 
+                    convenience to its occupants. Hotels oﬀer diﬀerent types 
+                    of rooms that range in size, luxury and amenites..</p>
+                  
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://static1.eskypartners.com/travelguide/rodzaje-posilkow-w-hotelu.jpg" class="card-img-top" width="500" height="200" alt="Meals"> 
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text fs-5">We're all food lovers of some kind. There's bound to be a favourite snack, meal or treat that springs to mind when your stomach starts to growl.</p>
+                 
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn2.veltra.com/ptr/20191209065320_132570597_12_0.jpg?imwidth=550&impolicy=custom" class="card-img-top" alt="Adventures and exploring." width="500" height="200">
+                <div class="card-body">
+                  <h5 class="card-title">Adventures</h5>
+                  <p class="card-text fs-5">Adventures For Your Family,Experience exciting sky adventures and enjoy the beautiful landscapes throughout your journey.</p>
+                 
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+<!-------Adding some more pics using the cloumns element-->
+
+<div class="container mt-5 mb-5 pt-5 pb-5 text-center">
+  <div class="row gx-0 g-0">
+    <div class="col-sm-12 pb-3"><h2>Around The World</h2></div>
+  </div>
+ 
+  <div class="row gx-0 g-0">  
+    <div class="col-sm-8">
+      <img class="img-fluid" src="//media.istockphoto.com/id/904172104/photo/weve-made-it-all-this-way-i-am-proud.jpg?s=612x612&w=0&k=20&c=MewnsAhbeGRcMBN9_ZKhThmqPK6c8nCT8XYk5ZM_hdg=" width="800" height="400" alt="Through the mountains trails.">
+    </div>
+      <div class="col-sm-6">
+      <img class="img-fluid" src="https://hips.hearstapps.com/hmg-prod/images/colors-of-italy-series-manarola-village-cinque-royalty-free-image-1622081263.jpg?crop=1xw:1xh;center,top&resize=980:*" width="600" height="400" alt="colorfull houses and cities">
+  </div>
+  </div>
+  
+  <div class="col-sm-4">
+  <img class="img-fluid" src="https://media.istockphoto.com/id/1345426734/photo/eiffel-tower-paris-river-seine-sunset-twilight-france.jpg?s=612x612&w=0&k=20&c=I5rAH5d_-Yyag8F0CKzk9vzMr_1rgkAASGTE11YMh9A=" width="400" height="400" alt="diving into the beauty pf paris">
+  </div> 
+  <div class="col-sm-8">
+    <img class="img-fluid" src="https://media.cnn.com/api/v1/images/stellar/prod/191011110307-02-australia-beautiful-places.jpg?q=w_1110,c_fill" width="800" height="400" alt="night glamour">
+  </div>
+</div>
+ </div>
+ <!-----image view all location and hotels for resting 
+ im using an image elements and give it a bootstrap element so it can be enhanced and fix in my Assignment-->
+ 
+<div>
+  <div class="container-center">
+    <div class="card text-bg-dark">
+    <img class="img-fluid" src="https://media.istockphoto.com/id/119926339/photo/resort-swimming-pool.jpg?s=612x612&w=0&k=20&c=9QtwJC2boq3GFHaeDsKytF4-CavYKQuy1jBD2IRfYKc=" class="card-img" alt="Staying and Relaxing.">
+    <div class="card-img-overlay">
+      <h5 class="card-title">Hotels for relaxing and enjoy</h5>
+      <p class="card-text fs-5">View All the best possibilites where the world meet.</p>
+  </div>
+  </div>
+</div>
+<!----now i make contact form where i will be using bootstrap element as the demand of this Assignmetnt-->
+<!----creating form using 2 kind of elements the first div is for first name last name and the second will be for all the details in form.-->
+<!------1st element used for first name and last name-->
+
+  <!-----contact from------>
+  <h1 class="text-center mt-5 pt-5">Contact Us</h1>
+  <h2 class="text-center mb-4">get more information about staying at the luxurious hotels!</h2>
+   <div class="container"> 
+  <form class="row  g-3 mb-5 ms-5 ms-3 pt-5">
+    
+      <div class="col-md-6">
+        <label for="firstname" class="form-label">First name </label>
+        <input type="text" class="form-control" arial-label="First name" id="First name">
+      </div>
+      <div class="col-md-6">
+        <label for="lastname" class="form-label">last name </label>
+        <input type="text" class="form-control" arial-label="Last name" id="Last name">
+      </div>
+    
+
+
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-12">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-6">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div> 
+<!------the last i will add footer-->
+
+<footer>
+<div class="text-center p-2">
+  <h5> World Tour International company copyright 2024 </h5> 
+</div>
+</footer>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
